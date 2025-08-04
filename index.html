@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>A Chave do pack Milionario </title>
+
+  <!-- Google Font: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- ScrollReveal + CountUp -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.6.2/countUp.min.js"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #0c1020;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header, section {
+      padding: 3rem 1.5rem;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      font-weight: 500;
+      color: #f4a400;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      color: #ccc;
+      font-weight: 300;
+    }
+
+    .btn {
+      background: linear-gradient(135deg, #ffb74d, #ff8a65);
+      background-size: 200% 200%;
+      color: #000;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.4s ease;
+      box-shadow: 0 4px 15px rgba(255,140,60,0.3);
+      position: relative;
+      overflow: hidden;
+      border: none;
+    }
+
+    .btn:hover {
+      animation: btnGlow 2s alternate infinite;
+      transform: translateY(-3px) scale(1.05);
+      filter: brightness(1.1);
+    }
+
+    @keyframes btnGlow {
+      0% {
+        background-position: 0% 0%;
+        box-shadow: 0 0 10px rgba(255,140,60,0.4);
+      }
+      100% {
+        background-position: 100% 100%;
+        box-shadow: 0 0 20px rgba(255,140,60,0.6);
+      }
+    }
+
+    .badge {
+      background: #222;
+      color: #f4a400;
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: #12182e;
+      padding: 2rem;
+      border-radius: 12px;
+      border: 1px solid #1e253f;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(244,164,0,0.2);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+      border-top: 1px solid #1e253f;
+      margin-top: 3rem;
+    }
+
+    .counter-box {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+      font-size: 1.1rem;
+    }
+
+    .counter {
+      color: #f4a400;
+      font-weight: bold;
+    }
+
+    ul {
+      list-style: disc;
+      margin: 1rem auto 2rem auto;
+      padding-left: 1.5rem;
+      text-align: left;
+      max-width: 700px;
+      color: #ccc;
+    }
+
+    section:nth-of-type(odd) {
+      background: linear-gradient(45deg, rgba(255,165,0,0.07), rgba(255,200,0,0.03));
+      border-radius: 16px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .counter-box {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="badge">Acesso Restrito</span>
+    <h1>Os Arquivos que Revelam os Bastidores da Internet</h1>
+    <p>Um vazamento exclusivo expôs segredos que 99,99% das pessoas jamais conhecerão.</p>
+    <a href="youtube.com" class="btn">Acesse Agora</a>
+    <p style="margin-top: 1rem; font-size: 0.9rem;">Acesso exclusivo por tempo limitado</p>
+
+    <div class="counter-box">
+      <div>👁️ <span id="viewers" class="counter">3,826</span> visualizando agora</div>
+      <div>🛒 <span id="buyers" class="counter">+90</span> compraram hoje</div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Explore as Oportunidades</h2>
+    <p>Acesse conteúdos restritos, proteja seus dados e conecte-se com quem está por trás dos bastidores digitais.</p>
+
+    <div class="grid">
+      <div class="card reveal">
+        <span class="badge">Protegido</span>
+        <h3>Segurança Absoluta</h3>
+        <p>Seus dados protegidos com criptografia avançada.</p>
+        <a href="#" class="btn">Saiba Mais</a>
+      </div>
+      <div class="card reveal">
+        <span class="badge">Premium</span>
+        <h3>Acesso Exclusivo</h3>
+        <p>Descubra as pastas secretas que poucos conhecem.</p>
+        <a href="#" class="btn">Descobrir</a>
+      </div>
+      <div class="card reveal">
+        <span class="badge">Novo</span>
+        <h3>Documentos Vazados</h3>
+        <p>Informações que mudarão sua visão da internet.</p>
+        <a href="#" class="btn">Ver Agora</a>
+      </div>
+      <div class="card reveal">
+        <span class="badge">VIP</span>
+        <h3>Comunidade Secreta</h3>
+        <p>Conecte-se com insiders e especialistas.</p>
+        <a href="#" class="btn">Entrar</a>
+      </div>
+      <div class="card reveal">
+        <span class="badge">Internacional</span>
+        <h3>Rede Global</h3>
+        <p>Explore conexões e arquivos de vários países.</p>
+        <a href="#" class="btn">Explorar</a>
+      </div>
+      <div class="card reveal">
+        <span class="badge">Especial</span>
+        <h3>Recursos Premium</h3>
+        <p>Ferramentas e conteúdos exclusivos disponíveis.</p>
+        <a href="#" class="btn">Aproveitar</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <span class="badge">Conteúdo Restrito</span>
+    <h2>Os Arquivos Que Eles Não Queriam Que Você Visse</h2>
+    <p>Esses documentos revelam estratégias secretas, métodos ocultos e bastidores da elite digital. Aproveite enquanto ainda está disponível.</p>
+
+    <ul>
+      <li>Planilhas estratégicas nunca divulgadas</li>
+      <li>Métodos de monetização secretos</li>
+      <li>Arquivos pessoais e confidenciais</li>
+      <li>Informações dos bastidores da web</li>
+    </ul>
+
+    <a href="#" class="btn">Acessar Agora</a>
